@@ -1,1 +1,30 @@
 <!-- display all info from user-agent, http header, and  browser client-->
+<h2>Your information</h2>
+<div class="you">
+
+  <h4 class="title">User-Agent</h4>
+    {{result.ua}}
+  <h4 class="title">Browser</h4>
+    {{#each result.browser}}
+    {{@key}}: {{this}} <br>
+    {{/each}}
+  <h4 class="title">OS</h4>
+    {{#each result.os}}
+    {{@key}}: {{this}} <br>
+    {{/each}}
+  <h4 class="title">Engine</h4>
+    {{#each result.engine}}
+    {{@key}}: {{this}} <br>
+    {{/each}}
+  <h4 class="title">Device</h4>
+    {{result.device.vendor}}
+    {{result.device.model}}
+    {{result.device.type}}
+  <h4 class="title">CPU</h4>
+    {{result.cpu.architecture}}
+  <h4 class="title">Full Request Header</h4>
+    {{#each full}}
+      {{@key}}: {{this}}<br>
+    {{/each}}
+  <div id="map-canvas" style="width:600px;height:400px"></div>
+</div>

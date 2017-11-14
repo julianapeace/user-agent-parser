@@ -1,0 +1,16 @@
+.flexcontainer {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+    flex-direction: column;
+}
+.you{
+  padding: 0 5em 0 5em;
+}
+.title{
+  background-color: #eee;
+  color: white;
+  text-transform: uppercase;
+  display:block;
+  padding-left: 2em;
+}
