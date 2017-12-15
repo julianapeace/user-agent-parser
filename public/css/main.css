@@ -14,3 +14,30 @@
   display:block;
   padding-left: 2em;
 }
+
+body{
+  bacgkround-color: #222;
+  background:   linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),#222 url('/img/mountain-cloud.jpg') no-repeat fixed center;
+  background-size: cover;
+}
+
+body .content{
+  color: #eee;
+  border: 1px solid blue;
+  text-align: center;
+
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+}
+h1{
+  font-size:3.5em;
+  text-shadow: 1px 1px #222;
+  font-family: 'Open Sans', sans-serif;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+}
